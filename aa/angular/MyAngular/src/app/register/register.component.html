@@ -1,0 +1,46 @@
+<div class="container">
+  
+
+  <form [formGroup]="RegisterForm" (ngSubmit)="CreateUser()" class="signup-form">
+    <h2 class="text-center mb-4">Sign Up</h2>
+    <div class="mb-3">
+      <label for="Username" class="form-label">User Name</label>
+      <input id="Username" type="text" formControlName="Username" class="form-control" placeholder="Enter your username">
+      <div *ngIf="RegisterForm.get('Username')?.touched && RegisterForm.get('Username')?.invalid" class="alert alert-danger mt-2">
+        <div *ngIf="RegisterForm.get('Username')?.errors?.['required']">Username is required.</div>
+        <div *ngIf="RegisterForm.get('Username')?.errors?.['minlength']">Username must be at least 3 characters long.</div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="Password" class="form-label">Password</label>
+      <input id="Password" type="password" formControlName="Password" class="form-control" placeholder="Enter your Password">
+      <div *ngIf="RegisterForm.get('Password')?.touched && RegisterForm.get('Password')?.invalid" class="alert alert-danger mt-2">
+        <div *ngIf="RegisterForm.get('Password')?.errors?.['required']">Password is required.</div>
+        <div *ngIf="RegisterForm.get('Password')?.errors?.['minlength']">Password must be at least 6 characters long.</div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="Age" class="form-label">Age</label>
+      <input id="Age" type="number" formControlName="Age" class="form-control" placeholder="Enter your Age">
+      <div *ngIf="RegisterForm.get('Age')?.touched && RegisterForm.get('Age')?.invalid" class="alert alert-danger mt-2">
+        <div *ngIf="RegisterForm.get('Age')?.errors?.['required']">Age is required.</div>
+        <div *ngIf="RegisterForm.get('Age')?.errors?.['min']">You must be at least 18 years old.</div>
+        <div *ngIf="RegisterForm.get('Age')?.errors?.['max']">Age cannot be more than 120 years old.</div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="PhoneNo" class="form-label">Phone Number</label>
+      <input id="PhoneNo" type="tel" formControlName="PhoneNumber" class="form-control" placeholder="Enter your Phone Number">
+      <div *ngIf="RegisterForm.get('PhoneNo')?.touched && RegisterForm.get('PhoneNo')?.invalid" class="alert alert-danger mt-2">
+        <div *ngIf="RegisterForm.get('PhoneNo')?.errors?.['required']">Phone Number is required.</div>
+        <div *ngIf="RegisterForm.get('PhoneNo')?.errors?.['pattern']">Phone Number must be a 10-digit number.</div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="RegisterForm.invalid">Register</button>
+    <br><br>
+  </form>
+</div>

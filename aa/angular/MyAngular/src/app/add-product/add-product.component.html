@@ -1,0 +1,39 @@
+<app-nav-bar [user]="Message"></app-nav-bar>
+<div class="d-flex justify-content-center align-items-center vh-100" style="background-color: #818d99;">
+    <div class="card p-4" style="width: 30rem;">
+      <div class="card-body">
+        
+        
+        <h2 class="card-title text-center mb-4">Add Product</h2>
+        <form [formGroup]="addproductForm" (ngSubmit)="addproduct()">
+          <div class="form-group">
+            <label for="ProductName">Product Name:</label>
+            <input id="ProductName" type="text" formControlName="ProductName" class="form-control" placeholder="Enter Product Name">
+            <div *ngIf="addproductForm.get('ProductName')?.touched && addproductForm.get('ProductName')?.invalid" class="alert alert-danger mt-2">
+              <div *ngIf="addproductForm.get('ProductName')?.errors?.['required']">Product Name is required.</div>
+            </div>
+          </div>
+          <br>
+    
+          <div class="form-group">
+            <label for="ProductDescription">Product Description:</label>
+            <input id="ProductDescription" type="text" formControlName="ProductDescription" class="form-control" placeholder="Enter Product Description">
+            <div *ngIf="addproductForm.get('ProductDescription')?.touched && addproductForm.get('ProductDescription')?.invalid" class="alert alert-danger mt-2">
+              <div *ngIf="addproductForm.get('ProductDescription')?.errors?.['required']">Product Description is required.</div>
+            </div>
+          </div>
+          <br>
+    
+          <div class="form-group">
+            <label for="ProductPrice">Product Price:</label>
+            <input id="ProductPrice" type="text" formControlName="ProductPrice" class="form-control" placeholder="Enter Product Price">
+            <div *ngIf="addproductForm.get('ProductPrice')?.touched && addproductForm.get('ProductPrice')?.invalid" class="alert alert-danger mt-2">
+              <div *ngIf="addproductForm.get('ProductPrice')?.errors?.['required']">Product Price is required.</div>
+              <div *ngIf="addproductForm.get('ProductPrice')?.errors?.['min']">Price must be a positive number.</div>
+            </div>
+          </div>
+          <br>
+    
+          <button type="submit" class="btn btn-primary w-100" [disabled]="addproductForm.invalid">Submit</button>
+    
+  

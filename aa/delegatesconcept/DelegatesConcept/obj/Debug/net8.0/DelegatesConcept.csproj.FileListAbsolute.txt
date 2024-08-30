@@ -1,0 +1,14 @@
+C:\delegatesconcept\DelegatesConcept\bin\Debug\net8.0\DelegatesConcept.exe
+C:\delegatesconcept\DelegatesConcept\bin\Debug\net8.0\DelegatesConcept.deps.json
+C:\delegatesconcept\DelegatesConcept\bin\Debug\net8.0\DelegatesConcept.runtimeconfig.json
+C:\delegatesconcept\DelegatesConcept\bin\Debug\net8.0\DelegatesConcept.dll
+C:\delegatesconcept\DelegatesConcept\bin\Debug\net8.0\DelegatesConcept.pdb
+C:\delegatesconcept\DelegatesConcept\obj\Debug\net8.0\DelegatesConcept.GeneratedMSBuildEditorConfig.editorconfig
+C:\delegatesconcept\DelegatesConcept\obj\Debug\net8.0\DelegatesConcept.AssemblyInfoInputs.cache
+C:\delegatesconcept\DelegatesConcept\obj\Debug\net8.0\DelegatesConcept.AssemblyInfo.cs
+C:\delegatesconcept\DelegatesConcept\obj\Debug\net8.0\DelegatesConcept.csproj.CoreCompileInputs.cache
+C:\delegatesconcept\DelegatesConcept\obj\Debug\net8.0\DelegatesConcept.dll
+C:\delegatesconcept\DelegatesConcept\obj\Debug\net8.0\refint\DelegatesConcept.dll
+C:\delegatesconcept\DelegatesConcept\obj\Debug\net8.0\DelegatesConcept.pdb
+C:\delegatesconcept\DelegatesConcept\obj\Debug\net8.0\DelegatesConcept.genruntimeconfig.cache
+C:\delegatesconcept\DelegatesConcept\obj\Debug\net8.0\ref\DelegatesConcept.dll

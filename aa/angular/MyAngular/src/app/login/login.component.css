@@ -1,0 +1,54 @@
+:host {
+    display: block;
+    background-color: #d2d6d8; /* Light blue background for the component */
+    min-height: 100vh; /* Ensure it covers the viewport height */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Ensure the form is centered in the viewport */
+  .container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */
+    min-height: 100vh; /* Full viewport height */
+    padding-top: 20px; /* Space from the top of the viewport */
+  }
+  
+  /* Style the form container */
+  .signin-form {
+    background-color: #ffffff; /* White background for the form */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 20px; /* Space inside the form */
+    width: 100%; /* Full width up to max-width */
+    max-width: 400px; /* Limit the maximum width */
+  }
+  
+  /* Style the form labels */
+  .form-label {
+    font-size: 0.875rem; /* Slightly smaller font size */
+    color: #495057; /* Dark grey color */
+  }
+  
+  /* Style the input fields */
+  .form-control {
+    border-radius: 4px; /* Slightly rounded corners */
+    border: 1px solid #ced4da; /* Default border color */
+  }
+  
+  /* Style the submit button */
+  .btn-primary {
+    background-color: #007bff; /* Bright blue color */
+    border-color: #007bff; /* Consistent border color */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #004085; /* Darker border color on hover */
+  }
+  
+  /* Style the message text */
+  .text-muted {
+    color: #6c757d; /* Muted grey color */
+  }

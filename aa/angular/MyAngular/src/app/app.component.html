@@ -1,0 +1,5 @@
+<app-nav-bar></app-nav-bar>
+<div class="container text-center mt-5" *ngIf="router.url === '/' || router.url === '/home'">
+  <h1 class="display-4">Welcome to My App</h1>
+</div>
+<router-outlet></router-outlet>

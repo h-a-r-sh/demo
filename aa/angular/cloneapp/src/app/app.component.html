@@ -1,0 +1,29 @@
+<!-- <nav>
+  <ul>
+    <li><a routerLink="Signup">Signup</a></li>
+    
+    <li><a routerLink="Login">Login</a></li>
+  </ul>
+</nav>
+<router-outlet></router-outlet> -->
+<button (click)="Details()">UserDetails</button>
+
+<div>
+  <h3>User List</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of result">
+        <td>{{ user.name }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.phone }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

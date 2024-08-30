@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid me-auto">
+      <!-- Brand and Toggler -->
+      <a class="navbar-brand" routerLink="/" *ngIf="router.url === '/' || router.url === '/AccountLogin' || router.url === '/AccountCreate'">MyApp</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- Links visible for specific routes -->
+          <li class="nav-item" *ngIf="router.url === '/' || router.url === '/AccountLogin'">
+            <a class="nav-link active" aria-current="page" routerLink="/AccountCreate">Signup</a>
+          </li>
+          <li class="nav-item" *ngIf="router.url === '/' || router.url === '/AccountCreate'">
+            <a class="nav-link" routerLink="/AccountLogin">Signin</a>
+          </li>
+        </ul>
+  
+        <!-- User-related links aligned to the right -->
+        <ul class="navbar-nav" >
+          <ng-container *ngIf="user">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/ProductDashBoard">MyDashBoard</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Product
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" routerLink="/AddProduct">Add Products</a></li>
+                <!-- <li><a class="dropdown-item" routerLink="/UpdateProduct">Update Products</a></li>
+                <li><a class="dropdown-item" routerLink="/DeleteProduct">Delete Product</a></li> -->
+                <li><a class="dropdown-item" routerLink="/ShowProduct">Show Product</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="Logout()">Logout</a>
+            </li>
+          </ng-container>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  

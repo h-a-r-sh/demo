@@ -1,0 +1,36 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" routerLink='/ProductDashBoard'>MyDashBoard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">hiii</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Product
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="/AddProduct">Add Products</a></li>
+                        <li><a class="dropdown-item" routerLink="/UpdateProduct">Update Products</a></li>
+                        <li><a class="dropdown-item" routerLink="/DeleteProduct">Delete Product</a></li>
+                        <li><a class="dropdown-item" routerLink="/ShowProduct">Show Product</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="Logout()" routerLink="/" >Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <h1>Welcome to {{Message}}</h1>
+    </div> -->
+    <app-nav-bar [user]="Message"></app-nav-bar>
+
+<div class="container">
+        
+  <h1>Welcome to {{Message}}</h1>
+</div>
